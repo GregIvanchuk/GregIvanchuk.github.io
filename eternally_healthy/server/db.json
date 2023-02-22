@@ -1,0 +1,182 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Протеїн 1 кг",
+      "company": "Optimum Nutrition",
+      "urlImg": "/images/good1.jpg",
+      "price": "1998",
+      "count": "1"
+    },
+    {
+      "id": "2",
+      "title": "Омега 3-6-9",
+      "company": "Ostrovit",
+      "urlImg": "/images/good2.jfif",
+      "price": "999",
+      "count": "1"
+    },
+    {
+      "id": "3",
+      "title": "Кретин 0.5 кг",
+      "company": "Animal Pak",
+      "urlImg": "/images/good3.jpg",
+      "price": "799",
+      "count": "1"
+    },
+    {
+      "id": "4",
+      "title": "Аргінін",
+      "company": "Scietic Nutrition",
+      "urlImg": "/images/good8.jpg",
+      "price": "799",
+      "count": "1"
+    },
+    {
+      "id": "5",
+      "title": "Мультивітаміни",
+      "company": "Now Foods",
+      "urlImg": "/images/shopping.webp",
+      "price": "989",
+      "count": "1"
+    },
+    {
+      "id": "6",
+      "title": "Гейнер 2,5 кг",
+      "company": "My Protein",
+      "urlImg": "/images/wed.webp",
+      "price": "650",
+      "count": "1"
+    }
+  ],
+  "favorites": [
+    {
+      "urlImg": "/images/good2.jfif",
+      "title": "Омега 3-6-9",
+      "company": "Ostrovit",
+      "price": "999",
+      "id": "2"
+    },
+    {
+      "urlImg": "/images/good1.jpg",
+      "title": "Протеїн 1 кг",
+      "company": "Optimum Nutrition",
+      "price": "1998",
+      "id": "1"
+    },
+    {
+      "urlImg": "/images/good3.jpg",
+      "title": "Кретин 0.5 кг",
+      "company": "Animal Pak",
+      "price": "799",
+      "id": "3"
+    },
+    {
+      "urlImg": "/images/good8.jpg",
+      "title": "Аргінін",
+      "company": "Scietic Nutrition",
+      "price": "799",
+      "id": "4"
+    },
+    {
+      "urlImg": "/images/shopping.webp",
+      "title": "Мультивітаміни",
+      "company": "Now Foods",
+      "price": "989",
+      "id": "5"
+    },
+    {
+      "urlImg": "/images/wed.webp",
+      "title": "Гейнер 2,5 кг",
+      "company": "My Protein",
+      "price": "650",
+      "id": "6"
+    }
+  ],
+  "cart": [],
+  "users": [
+    {
+      "data": {
+        "firstName": "Грио",
+        "lastName": "Іванчук",
+        "phoneNumber": "0890887766",
+        "city": "Чернівці",
+        "numberMail": "9"
+      },
+      "itemsCart": [
+        {
+          "urlImg": "/images/good8.jpg",
+          "title": "Аргінін",
+          "company": "Scietic Nutrition",
+          "price": "799",
+          "id": "4",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good3.jpg",
+          "title": "Кретин 0.5 кг",
+          "company": "Animal Pak",
+          "price": "799",
+          "id": "3",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good2.jfif",
+          "title": "Омега 3-6-9",
+          "company": "Ostrovit",
+          "price": "999",
+          "id": "2",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/shopping.webp",
+          "title": "Мультивітаміни",
+          "company": "Now Foods",
+          "price": "989",
+          "id": "5",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/wed.webp",
+          "title": "Гейнер 2,5 кг",
+          "company": "My Protein",
+          "price": "650",
+          "id": "6",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good1.jpg",
+          "title": "Протеїн 1 кг",
+          "company": "Optimum Nutrition",
+          "price": "1998",
+          "id": "1",
+          "count": 1
+        }
+      ],
+      "sum": 6234,
+      "id": 1
+    },
+    {
+      "data": {
+        "firstName": "Грио",
+        "lastName": "Іванчук",
+        "phoneNumber": "0890887766",
+        "city": "Чернівці",
+        "numberMail": "17"
+      },
+      "itemsCart": [
+        {
+          "urlImg": "/images/wed.webp",
+          "title": "Гейнер 2,5 кг",
+          "company": "My Protein",
+          "price": "650",
+          "id": "6",
+          "count": "6"
+        }
+      ],
+      "sum": 3900,
+      "id": 2
+    }
+  ],
+  "buys": []
+}

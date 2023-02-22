@@ -1,0 +1,92 @@
+.wrapper{
+    background-color:black;
+}
+.Goods{
+    display: flex;
+    flex-wrap: wrap;
+}
+.goodItem {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 260px;
+    border: 1px solid rgb(70, 69, 69);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease ;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    flex-wrap:wrap;
+}
+.goodItem input{
+    width:30px;
+    margin-top: -25px;
+    margin-left: 140px;
+}
+.favor{
+    margin-top: -15px;
+    width: 25px;
+    height: 25px;
+    margin-left: -170px;
+}
+.goodItem:hover{
+    box-shadow: 0px 14px 30px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+
+}
+.goodDecr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 3px;
+}
+.goodDecr img {
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+}
+.priceContainer{
+    display: flex;
+    gap:20px;
+}
+.price {
+    margin-top: -10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+}
+.goodPrice {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.descrGood {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.modelGood {
+    margin-top: -10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}

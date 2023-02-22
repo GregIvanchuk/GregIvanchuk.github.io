@@ -1,0 +1,151 @@
+.drawer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 385px;
+    height: 100%;
+    right: 0;
+    background-color: black;
+    border-left: 1px solid #eaeaea;
+    z-index: 1;
+    border-bottom: 1px solid #eaeaea;
+    justify-content: space-between;  
+    z-index: 2;
+}
+@media (max-width: 385px) {
+    .drawer {
+        width: 350px;
+        align-items: center;
+    }
+}
+@media (max-width: 350px) {
+    .drawer {
+        width: 300px;
+    }
+}
+@media (max-width: 300px) {
+    .drawer {
+        width: 250px;
+    }
+}
+.top_drawer {
+    overflow: auto;
+}
+.close_button {
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;  
+}
+@media (max-width: 385px) {
+    .close_button {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .close_button {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 350px) {
+    .close_button {
+        margin-left: 70px;
+    }
+}
+
+.close_button:hover{
+    height: 23px;
+    width: 23px;
+}
+.drawer h1 {
+    color:rgb(255, 255, 255);
+    padding-left: 140px;
+}
+.item_cart{
+    width: 235px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 67px;
+    margin-left: 67px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.item_cart span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.item_cart p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.b_del{
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #f0efef;
+}
+
+.b_del:hover{
+    background: #e3e3e3;
+}
+.draw_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.draw_footer span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+.draw_footer button {
+    margin-top: 15px;
+    color: white;
+    width:  320px;
+    height: 55px;
+    left: 895px;
+    top: 974px;
+    background: #719a40;
+    border-radius: 18px;
+}
+@media (max-width: 385px) {
+    .draw_footer button{
+        width: 280px;
+    }
+}
+@media (max-width: 350px) {
+    .draw_footer button{
+        width: 255px;
+    }
+}
+@media (max-width: 350px) {
+    .draw_footer button{
+        width: 220px;
+    }
+}
+.draw_footer button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+}
+.in_cart_price1{
+    margin-top: 3px;
+}
+.in_cart_price2{
+    margin-top: -13px;
+}

@@ -1,0 +1,57 @@
+.mineSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.sliderStyles {
+    margin: 0 auto;
+    max-width:80%;
+    position:relative;
+}
+.slideStyles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    position:relative;
+    background-position:center;
+    z-index:0,
+}
+.slideStyles img {
+    max-width:80%;
+    max-height:100%;
+}
+.leftArrowStyles {
+    position:absolute;
+    top:50%;
+    transform:translate(0,-50%);
+    left:-5px;
+    font-size:45px;
+    color:white;
+    z-index:0;
+    cursor:pointer;
+}
+.rightArrowStyles {
+    position: absolute;
+    top:50%;
+    transform:translate(0,-50%);
+    right:2px;
+    font-size:45px;
+    color:white;
+    z-index: 0;
+    cursor: pointer;
+}
+.dotsContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots {
+    margin-top: -50px;
+   font-size: 80px;
+   color: white;
+   cursor: pointer;
+  
+}

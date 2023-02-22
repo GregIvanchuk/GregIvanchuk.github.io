@@ -1,0 +1,89 @@
+.drawer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 385px;
+    height: 100%;
+    right: 0;
+    background-color: black;
+    border-left: 1px solid #eaeaea;
+    z-index: 1;
+    justify-content: space-between ;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 2;
+}
+.cart_Items img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.form {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form form {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.form h3{
+    color: white;
+}
+@media (max-width: 385px) {
+    .form h3{
+       font-size: 18px;
+    }
+}
+form input {
+    width: 260px;
+    height: 35px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+@media (max-width: 385px) {
+    .form input{
+        width: 230px;
+        height: 30px;
+    }
+}
+@media (max-width: 350px) {
+    .form input{
+        width: 200px;
+        height: 25px;
+    }
+}
+
+form button {
+    margin-top: 10px;
+    width: 260px;
+    height: 55px;
+    background: #719a40;
+    color: white;
+
+}
+@media (max-width: 385px) {
+    .form button{
+        width: 230px;
+    }
+}
+@media (max-width: 350px) {
+    .form button{
+        width: 200px;
+    }
+}
+form button:hover {
+    width: 265px;
+    height: 60px;
+    background: #87f007;
+    color: white;
+
+}
+

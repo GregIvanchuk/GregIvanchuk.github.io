@@ -29,21 +29,21 @@ function App() {
     const dataPullOut = (obj) => {
         if (itemsCart.find((item) => item.id === obj.id)) {
             setItemsCart((prev) => prev.filter((item) => item.id != obj.id));
-        } else axios.post("http://localhost:3001/cart", obj);
+        } else axios.post("https://2013-188-191-238-217.eu.ngrok.io/cart", obj);
         setItemsCart((prev) => [...prev, obj]);
     };
     let dataFarPullOt = (obj) => {
         if (itemsCart.find((item) => item.id === obj.id)) {
             setItemsCart((prev) => prev.filter((item) => item.id != obj.id));
-        } else axios.post("http://localhost:3001/cart", obj);
+        } else axios.post("https://2013-188-191-238-217.eu.ngrok.io/cart", obj);
         setItemsCart((prev) => [...prev, obj]);
     };
     let onAddFavorite = (obj) => {
-        axios.post("http://localhost:3001/favorites", obj);
+        axios.post("https://2013-188-191-238-217.eu.ngrok.io/favorites", obj);
         setFavor((prev) => [...prev, obj]);
     };
     let onAddBuys = (obj) => {
-        axios.post("http://localhost:3001/buys", obj);
+        axios.post("https://2013-188-191-238-217.eu.ngrok.io/buys", obj);
     };
     useEffect(() => {
         // fetch("https://63d8e9bd74f386d4efe06c87.mockapi.io/items")
@@ -55,9 +55,9 @@ function App() {
         // })
         async function fetchData() {
             const itemResponce  = await axios.get("https://2013-188-191-238-217.eu.ngrok.io/items");
-            const cartResponce  = await axios.get("http://localhost:3001/cart");
-            const favorResponce = await axios.get("http://localhost:3001/favorites");
-            const buysResponce  = await axios.get("http://localhost:3001/buys");
+            const cartResponce  = await axios.get("https://2013-188-191-238-217.eu.ngrok.io/cart");
+            const favorResponce = await axios.get("https://2013-188-191-238-217.eu.ngrok.io/favorites");
+            const buysResponce  = await axios.get("https://2013-188-191-238-217.eu.ngrok.io/buys");
             setIsLoading(false);
             setItems(itemResponce.data);
             setItemsCart(cartResponce.data);
@@ -67,11 +67,11 @@ function App() {
         fetchData();
     }, []);
     let removeItem = (id) => {
-        axios.delete(`http://localhost:3001/cart/${id}`);
+        axios.delete(`https://2013-188-191-238-217.eu.ngrok.io/${id}`);
         setItemsCart((prev) => prev.filter((item) => item.id != id));
     };
     let deleteFav = (id) => {
-        axios.delete(`http:localhost:3001/favorites/${id}`);
+        axios.delete(`https://2013-188-191-238-217.eu.ngrok.io/${id}`);
         setFavor((prev) => prev.filter((item) => item.id != id));
     };
 

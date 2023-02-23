@@ -6,15 +6,12 @@
 }
 @media (max-width: 700px) {
     .main_title p {
-        display: block;
+        margin: 0 auto;
+        display: inline-block;
         font-size: 16px;
-        text-align: center;
-        display: flex;
-        align-items: center;
         justify-content: center;
         max-width: 200px;
-        margin-bottom: -10px;
-        overflow:scroll;
+        word-wrap: break-word;
     }
 }
 .search_label {

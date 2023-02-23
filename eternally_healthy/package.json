@@ -2,7 +2,6 @@
   "name": "eternally_healthy",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://2013-188-191-238-217.eu.ngrok.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -23,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -w server/db.json -p3001"
+    "server": "json-server -w server/db.json -p3001",
+    "proxy": "https://2013-188-191-238-217.eu.ngrok.io"
   },
   "eslintConfig": {
     "extends": [

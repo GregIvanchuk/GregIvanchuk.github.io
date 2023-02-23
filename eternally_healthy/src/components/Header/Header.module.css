@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -31,10 +31,10 @@
 .store_title p {
     margin-top: -20px;
     padding-top: 100 px;
-    font-family:"Inter";
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size:   14px;
+    font-size: 14px;
     line-height: 17px;
     color: #9d9d9d;
 }
@@ -53,51 +53,55 @@
 .rigthHeader li {
     display: flex;
     gap: 10px;
-   
 }
-.cart{
+.cart {
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    gap:5px;
+    gap: 5px;
 }
 .cartIcon {
     margin-top: -10px;
 }
 @media (max-width: 700px) {
     .header {
-       padding: 10px;
+        padding: 10px;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .header {
-       gap:-5px
+        gap: -5px;
     }
 }
 @media (max-width: 700px) {
     .cart span {
-       display: none;
+        display: none;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+    .cart span {
+        display: contents;
+    }
+}
+@media (max-width: 340px) {
+    .cart span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
     .rigthHeader {
         align-items: center;
         justify-content: center;
-        gap: 80px;
+        gap: 50px;
         margin-top: -10px;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .leftHeader {
         justify-content: center;
-        align-items: center;
         gap: 0px;
-    }
-}
-@media (max-width: 450px) {
-    .leftHeader p {
-        display: none;
     }
 }

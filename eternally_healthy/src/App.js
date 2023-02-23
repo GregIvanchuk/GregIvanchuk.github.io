@@ -54,7 +54,7 @@ function App() {
         // setItems(json)
         // })
         async function fetchData() {
-            const itemResponce  = await axios.get("https://8d17-188-191-238-217.eu.ngrok.io/items");
+            const itemResponce  = await axios.get("http://localhost:3001/items");
             const cartResponce  = await axios.get("http://localhost:3001/cart");
             const favorResponce = await axios.get("http://localhost:3001/favorites");
             const buysResponce  = await axios.get("http://localhost:3001/buys");

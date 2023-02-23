@@ -96,8 +96,6 @@ function App() {
         {src:"/images/slide.jpg"  ,   title:"i1"},
         {src:"/images/slide3.jpg" ,   title:"i3"},
         {src:"/images/slider4.jpg" ,   title:"i4"},
-        {src:"/images/slide2.jpg"  ,   title:"i2"},
-        {src:"/images/slide6.webp" ,   title:"i5"},
     ];
     // "https://sport.bio-shop.kiev.ua/image/cache/catalog/slider_4-850x300-850x300.jpg" 
     // "https://sport.bio-shop.kiev.ua/image/cache/catalog/slider_3-850x300-850x300.jpg"

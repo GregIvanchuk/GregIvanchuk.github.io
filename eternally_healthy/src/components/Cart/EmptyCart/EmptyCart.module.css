@@ -73,15 +73,12 @@
     background: #719a40;
     border-radius: 7px;
     color: white;
+    border: none;
 
 }
-@media (max-width: 500px) {
-    .but_back{
-        width: 150px;
-        height: 45px;
-    }
-}
+
 .but_back:hover{
     cursor: pointer;
     background-color: greenyellow;
+    border: none;
 }

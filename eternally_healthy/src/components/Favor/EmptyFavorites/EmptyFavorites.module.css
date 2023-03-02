@@ -38,6 +38,7 @@
     margin-bottom: 25px;
 }
 .btn {
+    border: none;
     color: white;
     width: 245px;
     height: 55px;
@@ -48,6 +49,7 @@
 }
 
 .btn:hover{
+    border: none;
     cursor: pointer;
     background-color: greenyellow;
 }

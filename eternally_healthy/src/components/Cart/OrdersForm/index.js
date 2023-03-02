@@ -15,10 +15,10 @@ function OrdersForm({ openCart,itemsCart,setItemsCart,sum }) {
     const onSubmit = (data) => {
         async function fetchData() {
         let ord = {data,itemsCart,sum:sum}
-      await axios.post(" https://deb6-188-191-238-217.eu.ngrok.io/users",ord);
+      await axios.post("http://localhost:3001/users",ord);
         setItemsCart([]);
       await  itemsCart.forEach((item) => {
-         axios.delete(`https://deb6-188-191-238-217.eu.ngrok.io/cart/${item.id}`);
+         axios.delete(`http://localhost:3001/cart/${item.id}`);
         });
         setOnSub(!onSub);
     }

@@ -13,20 +13,20 @@ function Header(props) {
             <ul className={styles.rigthHeader}>
                 <li className={styles.cartIcon}>
                     <div className={styles.cart} onClick={props.openCart}>
-                        <img height={32} width={32} src="/images/cart.png" alt="" />
+                        <img className={styles.firstIcon} height={32} width={32} src="/images/cart.png" alt="" />
                         <span>{props.sum} грн.</span>
                     </div>
                 </li>
                 <li>
                     <Link to="/favorites">
                         {" "}
-                        <img width={32} height={32} src="/images/like.png" />
+                        <img  className={styles.firstIcon} width={32} height={32} src="/images/like.png" />
                     </Link>
                 </li>
                 <li>
                 <Link to="/buys">
                         {" "}
-                        <img width={40} height={40} src="/images/user.png" />
+                        <img className={styles.lastIcon}  width={40} height={40} src="/images/user.png" />
                     </Link>
                 </li>
             </ul>

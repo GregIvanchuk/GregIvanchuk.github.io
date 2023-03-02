@@ -51,7 +51,9 @@
         margin-left: 70px;
     }
 }
-
+.item_cart_descr{
+    width: 200px;
+}
 .close_button:hover{
     height: 23px;
     width: 23px;
@@ -87,17 +89,18 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #040404;
 }
 .b_del{
+    margin-right: 5px;
     width: 32px;
-    height: 32px;
-    background-color: #FFFFFF;
-    border: 1px solid #f0efef;
+    height: 25px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
 }
 
 .b_del:hover{
-    background: #e3e3e3;
+    background: #525151;
 }
 .draw_footer {
     display: flex;

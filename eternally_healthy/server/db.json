@@ -176,6 +176,80 @@
       ],
       "sum": 3900,
       "id": 2
+    },
+    {
+      "data": {
+        "firstName": "Грио",
+        "lastName": "Іванчук",
+        "phoneNumber": "0890887766",
+        "city": "Чернівці",
+        "numberMail": "17"
+      },
+      "itemsCart": [
+        {
+          "urlImg": "/images/shopping.webp",
+          "title": "Мультивітаміни",
+          "company": "Now Foods",
+          "price": "989",
+          "id": "5",
+          "count": 1
+        }
+      ],
+      "sum": 989,
+      "id": 3
+    },
+    {
+      "data": {
+        "firstName": "nkjnmnm m",
+        "lastName": "lkmklmlkm",
+        "phoneNumber": "lkmklmlkmkl",
+        "city": "lkmlkmlm",
+        "numberMail": "19"
+      },
+      "itemsCart": [
+        {
+          "urlImg": "/images/shopping.webp",
+          "title": "Мультивітаміни",
+          "company": "Now Foods",
+          "price": "989",
+          "id": "5",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good1.jpg",
+          "title": "Протеїн 1 кг",
+          "company": "Optimum Nutrition",
+          "price": "1998",
+          "id": "1",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good2.jfif",
+          "title": "Омега 3-6-9",
+          "company": "Ostrovit",
+          "price": "999",
+          "id": "2",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good3.jpg",
+          "title": "Кретин 0.5 кг",
+          "company": "Animal Pak",
+          "price": "799",
+          "id": "3",
+          "count": 1
+        },
+        {
+          "urlImg": "/images/good8.jpg",
+          "title": "Аргінін",
+          "company": "Scietic Nutrition",
+          "price": "799",
+          "id": "4",
+          "count": 1
+        }
+      ],
+      "sum": 5584,
+      "id": 4
     }
   ],
   "buys": []

@@ -14,7 +14,7 @@ function Header(props) {
                 <li className={styles.cartIcon}>
                     <div className={styles.cart} onClick={props.openCart}>
                         <img className={styles.firstIcon} height={32} width={32} src="/images/cart.png" alt="" />
-                        <span>{props.sum} грн.</span>
+                        <span>{props.sum}</span>
                     </div>
                 </li>
                 <li>

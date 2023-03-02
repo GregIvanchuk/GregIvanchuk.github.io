@@ -87,7 +87,7 @@ function App() {
 
     let countSum = () => {
         for (let i = 0; i < itemsCart.length; i++) {
-            sum += +itemsCart[i].price * itemsCart[i].count;
+            sum += +itemsCart[i].price * itemsCart[i].count ;
         }
     };
     countSum();

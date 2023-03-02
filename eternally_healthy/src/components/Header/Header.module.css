@@ -82,6 +82,14 @@
 @media (max-width: 750px) {
     .cart span {
         display: none;
+        font-size: 10px;
+    }
+}
+@media (max-width: 660px) {
+    .cart span {
+        display:contents;
+        width: 100px;
+
     }
 }
 @media (max-width: 450px) {
@@ -109,7 +117,7 @@
 @media (max-width: 450px) {
     .leftHeader img {
         margin-top: 0px;
-        height: 82px; 
+        height: 83px; 
         width: 70px;
 }
 }

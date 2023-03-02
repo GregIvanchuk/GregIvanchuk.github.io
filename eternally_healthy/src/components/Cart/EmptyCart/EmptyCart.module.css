@@ -71,9 +71,15 @@
     width: 245px;
     height: 55px;
     background: #719a40;
-    border-radius: 18px;
+    border-radius: 7px;
     color: white;
 
+}
+@media (max-width: 500px) {
+    .but_back{
+        width: 150px;
+        height: 45px;
+    }
 }
 .but_back:hover{
     cursor: pointer;

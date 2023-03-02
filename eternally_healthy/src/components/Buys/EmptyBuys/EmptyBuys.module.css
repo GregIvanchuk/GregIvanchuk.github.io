@@ -7,10 +7,19 @@
     margin-bottom: 200px;
     margin-top: 200px;
 }
-
+@media (max-width: 500px) {
+    .content{
+        margin-top: 50px;
+    }
+}
 .content h3 {
     font-size: 32px;
     color: white;
+}
+@media (max-width: 500px) {
+    .content h3{
+        font-size: 25px;
+    }
 }
 .content span { 
     font-family: 'Inter';
@@ -44,7 +53,7 @@
     left: 503px;
     top: 688px;
     background: #9DD458;
-    border-radius: 18px;
+    border-radius: 7px;
 }
 .btn:hover{
     cursor: pointer;

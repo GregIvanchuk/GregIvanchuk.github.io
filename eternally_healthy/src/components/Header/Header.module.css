@@ -113,7 +113,7 @@
         width: 70px;
 }
 }
-@media (max-width: 325px) {
+/* @media (max-width: 325px) {
     .store_title h3 {
         font-size: 17px;
     }
@@ -129,7 +129,7 @@
         height: 75px; 
         width: 70px;
 }
-}
+} */
 @media (max-width: 660px) {
     .rigthHeader {
         margin-top: -15px;

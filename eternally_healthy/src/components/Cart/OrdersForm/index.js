@@ -13,16 +13,19 @@ function OrdersForm({ openCart,itemsCart,setItemsCart,sum }) {
         reset,
     } = useForm();
     const onSubmit = (data) => {
-        async function fetchData() {
+    //     async function fetchData() {
+      
+    //   await axios.post("http://localhost:3001/users",ord);
+       
+    //   await  itemsCart.forEach((item) => {
+    //      axios.delete(`http://localhost:3001/cart/${item.id}`);
+    //     }});
         let ord = {data,itemsCart,sum:sum}
-      await axios.post("http://localhost:3001/users",ord);
         setItemsCart([]);
-      await  itemsCart.forEach((item) => {
-         axios.delete(`http://localhost:3001/cart/${item.id}`);
-        });
         setOnSub(!onSub);
-    }
-    fetchData() 
+       
+   
+    // fetchData() 
     };
     return onSub ? (
         <FramedCart openCart={openCart} />

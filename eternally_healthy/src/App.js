@@ -29,17 +29,15 @@ function App() {
     const dataPullOut = (obj) => {
         if (itemsCart.find((item) => item.id === obj.id)) {
             setItemsCart((prev) => prev.filter((item) => item.id != obj.id));
-        } else axios.post("http://localhost:3001", obj);
-        setItemsCart((prev) => [...prev, obj]);
+        } else /*axios.post("http://localhost:3001", obj);*/setItemsCart((prev) => [...prev, obj]);
     };
     let dataFarPullOt = (obj) => {
         if (itemsCart.find((item) => item.id === obj.id)) {
             setItemsCart((prev) => prev.filter((item) => item.id != obj.id));
-        } else axios.post("http://localhost:3001/cart", obj);
-        setItemsCart((prev) => [...prev, obj]);
+        } else /*axios.post("http://localhost:3001/cart", obj);*/ setItemsCart((prev) => [...prev, obj]);
     };
     let onAddFavorite = (obj) => {
-        axios.post("http://localhost:3001/favorites", obj);
+        // axios.post("http://localhost:3001/favorites", obj);
         setFavor((prev) => [...prev, obj]);
     };
     let onAddBuys = (obj) => {
@@ -54,24 +52,24 @@ function App() {
         // setItems(json)
         // })
         async function fetchData() {
-            const itemResponce  = await axios.get("http://localhost:3001/items");
-            const cartResponce  = await axios.get("http://localhost:3001/cart");
-            const favorResponce = await axios.get("http://localhost:3001/favorites");
-            const buysResponce  = await axios.get("http://localhost:3001/buys");
+            const itemResponce  = await axios.get("https://63d8e9bd74f386d4efe06c87.mockapi.io/goods");
+            // const cartResponce  = await axios.get("http://localhost:3001/cart");
+            // const favorResponce = await axios.get("http://localhost:3001/favorites");
+            // const buysResponce  = await axios.get("http://localhost:3001/buys");
             setIsLoading(false);
             setItems(itemResponce.data);
-            setItemsCart(cartResponce.data);
-            setFavor(favorResponce.data);
-            setBuysGoods(buysResponce.data);
+            // setItemsCart(cartResponce.data);
+            // setFavor(favorResponce.data);
+            // setBuysGoods(buysResponce.data);
         }
         fetchData();
     }, []);
     let removeItem = (id) => {
-        axios.delete(`http://localhost:3001/${id}`);
+        // axios.delete(`http://localhost:3001/${id}`);
         setItemsCart((prev) => prev.filter((item) => item.id != id));
     };
     let deleteFav = (id) => {
-        axios.delete(`http://localhost:3001/${id}`);
+        // axios.delete(`http://localhost:3001/${id}`);
         setFavor((prev) => prev.filter((item) => item.id != id));
     };
 

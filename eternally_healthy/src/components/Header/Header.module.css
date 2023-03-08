@@ -121,23 +121,6 @@
         width: 70px;
 }
 }
-/* @media (max-width: 325px) {
-    .store_title h3 {
-        font-size: 17px;
-    }
-}
-@media (max-width:325px) {
-    .store_title p {
-        font-size: 8px;
-    }
-}
-@media (max-width: 325px) {
-    .leftHeader img {
-        margin-top: 0px;
-        height: 75px; 
-        width: 70px;
-}
-} */
 @media (max-width: 660px) {
     .rigthHeader {
         margin-top: -15px;

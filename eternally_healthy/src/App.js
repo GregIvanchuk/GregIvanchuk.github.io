@@ -12,7 +12,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const AppContext = React.createContext({});
-
 function App() {
     let [isOpenCart, setIsOpenCart] = useState(false);
     let [itemsCart, setItemsCart] = useState([]);
@@ -72,7 +71,6 @@ function App() {
         // axios.delete(`http://localhost:3001/${id}`);
         setFavor((prev) => prev.filter((item) => item.id != id));
     };
-
     let addFramedGoods = (obj) => {
         // axios.delete(`https://63d8e9bd74f386d4efe06c87.mockapi.io/buys/${id}`);
         setBuysGoods(itemsCart);
@@ -89,15 +87,13 @@ function App() {
         }
     };
     countSum();
-
     const slides= [
-        {src:"/images/slide.jpg"  ,   title:"i1"},
         {src:"/images/slide3.jpg" ,   title:"i3"},
+        {src:"/images/slide.jpg"  ,   title:"i1"},
         {src:"/images/slider4.jpg" ,   title:"i4"},
     ];
     // "https://sport.bio-shop.kiev.ua/image/cache/catalog/slider_4-850x300-850x300.jpg" 
     // "https://sport.bio-shop.kiev.ua/image/cache/catalog/slider_3-850x300-850x300.jpg"
-
     return (
         <AppContext.Provider value={{ items, favor, sum, buysGoods }}>
             <div className={styles.wrapper}>

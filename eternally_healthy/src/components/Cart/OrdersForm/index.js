@@ -6,25 +6,16 @@ import axios from "axios";
 import { SubmitHandler, useForm } from "react-hook-form";
 function OrdersForm({ openCart,itemsCart,setItemsCart,sum }) {
     let [onSub, setOnSub] = useState(false);
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-        reset,
-    } = useForm();
+    const {register,handleSubmit,formState: { errors },reset,} = useForm();
     const onSubmit = (data) => {
     //     async function fetchData() {
-      
     //   await axios.post("http://localhost:3001/users",ord);
-       
     //   await  itemsCart.forEach((item) => {
     //      axios.delete(`http://localhost:3001/cart/${item.id}`);
     //     }});
         let ord = {data,itemsCart,sum:sum}
         setItemsCart([]);
         setOnSub(!onSub);
-       
-   
     // fetchData() 
     };
     return onSub ? (
@@ -32,18 +23,11 @@ function OrdersForm({ openCart,itemsCart,setItemsCart,sum }) {
     ) : (
         <div className={styles.drawer}>
             <div className={styles.cart_Items}>
-                <img
-                    onClick={openCart}
-                    className={styles.close_button}
-                    width={16}
-                    height={16}
-                    src="/images/hrestuk.svg"
-                    alt="close"
-                />
+                <img onClick={openCart} className={styles.close_button} width={16} height={16} src="/images/hrestuk.svg" alt="close"/>
                 <div className={styles.form}>
                     <h3>Введіть необхідні дані:</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <input
+                        <input 
                             {...register("firstName", { 
                                 required: "Field is required",
                                 minLength: 2,

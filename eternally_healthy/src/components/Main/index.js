@@ -4,7 +4,16 @@ import axios from "axios";
 import Slider from "./Slider";
 import Search from "./Search";
 import { useState,useEffect } from "react";
-function Main({pullOutData,pullOutFavor,setItemsCart,added = false, itemsCart,items,setItems,isLoading,slides}) {
+function Main({pullOutData,
+               pullOutFavor,
+               setItemsCart,
+               added = false, 
+               itemsCart,
+               items,
+               setItems,
+               isLoading,
+               slides })
+                {
     let [inputValue, setInputValue] = useState("");
     let  [count, setCount] = useState(1);
     const onAddToCart = (obj) =>{
@@ -13,7 +22,6 @@ function Main({pullOutData,pullOutFavor,setItemsCart,added = false, itemsCart,it
     const onAddToFavor = (obj) =>{
         pullOutFavor(obj);
      };
-     console.log(isLoading)
     let  changeInput = (event) => {
         setInputValue(event.target.value)
     }
@@ -43,7 +51,6 @@ function Main({pullOutData,pullOutFavor,setItemsCart,added = false, itemsCart,it
                        />  
                  )
     }
-    
     return (
       <div>
                 <Slider slides={slides}/>  
@@ -53,13 +60,5 @@ function Main({pullOutData,pullOutFavor,setItemsCart,added = false, itemsCart,it
         </main>
         </div>
     );
-}
-   
+} 
 export default Main;
-
-// [
-//     {"id": "1","title":"Протеїн 1 кг","company":"Optimum Nutrition","urlImg" : "/images/good1.jpg","price" : "1998"},
-//     {"id": "1","title":"Омега 3-6-9","company":"Ostrovit","urlImg" : "/images/good2.jfif","price" : "999"},
-//   {"id": "3","title":"Кретин 0.5 кг","company":"Animal Pak","urlImg" : "/images/good3.jpg","price" : "799"}
-
-// ]

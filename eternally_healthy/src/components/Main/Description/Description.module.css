@@ -36,6 +36,12 @@
         gap: 0px;
     }
 }
+@media(max-width:450px){
+    .container p {
+        width:260px
+    }
+}
+
 .container button {
     margin-top: 10px;
     width: 260px;

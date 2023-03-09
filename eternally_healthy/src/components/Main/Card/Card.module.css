@@ -14,7 +14,9 @@
 .head{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    align-items: center;
+    gap: 40px;
+    margin-top: -10px;
 }
 .head img{
     width: 25px;
@@ -22,6 +24,7 @@
 }
 .head input{
     width:30px;
+    height: 15px;
 }
 .goodItem:hover{
     box-shadow: 0px 14px 30px rgba(0,0,0,0.1);

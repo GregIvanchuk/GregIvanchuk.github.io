@@ -10,10 +10,12 @@ import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Description from "./components/Main/Description";
 
 export const AppContext = React.createContext({});
 function App() {
     let [isOpenCart, setIsOpenCart] = useState(false);
+    let [isOpenDescr, setIsOpenDescr] = useState(false);
     let [itemsCart, setItemsCart] = useState([]);
     let [items, setItems] = useState([]);
     let [favor, setFavor] = useState([]);
@@ -22,9 +24,16 @@ function App() {
     let [onFramed, setOnFramed] = useState(false);
     let [isLoading, setIsLoading] = useState(true);
     let [inputValue, setInputValue] = useState("");
+    let [id, setId] = useState("");
     let openCart = () => {
         setIsOpenCart(!isOpenCart);
     };
+    let openDescr = () => {
+        setIsOpenDescr(!isOpenDescr);
+    };
+    const dataPullOutId = (id) => {
+        setId(id)   
+    }
     const dataPullOut = (obj) => {
         if (itemsCart.find((item) => item.id === obj.id)) {
             setItemsCart((prev) => prev.filter((item) => item.id != obj.id));
@@ -109,6 +118,7 @@ function App() {
                             onFramed={onFramed}
                         />
                     ) : undefined}
+                     { isOpenDescr ? <Description id ={id} items={items} openDescr={openDescr}/>:undefined} 
                     <Header sum={sum} openCart={openCart} state={isOpenCart} />
                     <Routes>
                         <Route
@@ -138,6 +148,7 @@ function App() {
                             path="/"
                             element={
                                 <Main
+                                    openDescr={openDescr}
                                     slides={slides}
                                     isLoading={isLoading}
                                     items={items}
@@ -146,6 +157,7 @@ function App() {
                                     setItemsCart={setItemsCart}
                                     pullOutData={(obj) => dataPullOut(obj)}
                                     pullOutFavor={(obj) => onAddFavorite(obj)}
+                                    pullOutId ={(id) => dataPullOutId(id)}
                                 />
                             }
                         />

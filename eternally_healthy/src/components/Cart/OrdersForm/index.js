@@ -15,6 +15,7 @@ function OrdersForm({ openCart,itemsCart,setItemsCart,sum }) {
     //     }});
         let ord = {data,itemsCart,sum:sum}
         setItemsCart([]);
+        
         setOnSub(!onSub);
     // fetchData() 
     };

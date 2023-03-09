@@ -2,7 +2,7 @@ import styles from './Card.module.css';
 import React from 'react';
 import ContentLoader from "react-content-loader"
 import { useState,  } from 'react'; 
-function Card({urlImg,title, company, price,id ,count, onPlus, onHeart, changeInputCount,added, loading }) {
+function Card({urlImg,title, company, price,id ,count, onPlus, onHeart, changeInputCount,added, loading,openDescr,onDescr}) {
     let [isAdd, setIsAdd] = useState(added);
     let [isPress, setIsPress,] = useState(false);
     let clickAddCard = () => {
@@ -12,6 +12,10 @@ function Card({urlImg,title, company, price,id ,count, onPlus, onHeart, changeIn
     let pressAddFav = () => {
         setIsPress(!isPress);
         if (isPress == false) onHeart({urlImg,title,company, price, id})
+    }
+    let pressAddDescr = (id) => {
+        openDescr();
+        onDescr(id);
     }
     return (
     <div className={styles.Goods}>
@@ -37,6 +41,7 @@ function Card({urlImg,title, company, price,id ,count, onPlus, onHeart, changeIn
                     <img onClick={pressAddFav} className={styles.favor} 
                     src={isPress ? "/images/blacklike.png" : "/images/opacitylike.png"}/>
                     <input onChange={changeInputCount} type="number" min={1} max={1000}  />
+                    <img onClick={() => pressAddDescr(id)} width={15} height={15} src="/images/descr.png" alt="" srcset="" />
                 </div>
                 <img width={133} height={112} src={urlImg}/>
                 <div className={styles.goodDecr}>

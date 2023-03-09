@@ -5,7 +5,9 @@ import Slider from "./Slider";
 import Search from "./Search";
 import { useState,useEffect } from "react";
 function Main({pullOutData,
+                 openDescr,
                pullOutFavor,
+               pullOutId,
                setItemsCart,
                added = false, 
                itemsCart,
@@ -17,9 +19,12 @@ function Main({pullOutData,
     let [inputValue, setInputValue] = useState("");
     let  [count, setCount] = useState(1);
     const onAddToCart = (obj) =>{
-       pullOutData(obj);
+        pullOutData(obj);
     }
-    const onAddToFavor = (obj) =>{
+    const onDescrId = (id) =>{
+        pullOutId(id);
+     };
+     const onAddToFavor = (obj) =>{
         pullOutFavor(obj);
      };
     let  changeInput = (event) => {
@@ -36,6 +41,8 @@ function Main({pullOutData,
          ) 
         return ( isLoading ? [1,2,3,4,5,6,7,8,9,10] : filtredItems).map((obj,index) => 
                     <Card  
+                    openDescr={openDescr}
+                    onDescr = {(obj)  => onDescrId(obj)} 
                     added = {itemsCart.some((item) => obj.id === item.id)}
                     loading={ isLoading}
                     changeInputCount = {changeInputCount}

@@ -254,3 +254,168 @@
   ],
   "buys": []
 }
+[
+  {
+   "id": "1",
+   "title": "Протеїн 1 кг",
+   "company": "Optimum Nutrition",
+   "urlImg": "/images/good1.jpg",
+   "price": "1998",
+   "count": "1",
+    "description":  "Lorem"
+  },
+  {
+   "id": "2",
+   "title": "Омега 3-6-9",
+   "company": "Ostrovit",
+   "urlImg": "/images/good2.jfif",
+   "price": "999",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "3",
+   "title": "Кретин 0.5 кг",
+   "company": "Animal Pak",
+   "urlImg": "/images/good3.jpg",
+   "price": "799",
+   "count": "1",
+ "description": "Lorem"
+  },
+  {
+   "id": "4",
+   "title": "Аргінін",
+   "company": "Scietic Nutrition",
+   "urlImg": "/images/good8.jpg",
+   "price": "799",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "5",
+   "title": "Мультивітаміни",
+   "company": "Now Foods",
+   "urlImg": "/images/shopping.webp",
+   "price": "989",
+   "count": "1",
+   "description": "Lorem"
+ 
+  },
+  {
+   "id": "6",
+   "title": "Гейнер 2,5 кг",
+   "company": "My Protein",
+   "urlImg": "/images/wed.webp",
+   "price": "650",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "7",
+   "title": "Протеїн 1 кг",
+   "company": "Optimum Nutrition",
+   "urlImg": "/images/good1.jpg",
+   "price": "1998",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "8",
+   "title": "Омега 3-6-9",
+   "company": "Ostrovit",
+   "urlImg": "/images/good2.jfif",
+   "price": "999",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "9",
+   "title": "Кретин 0.5 кг",
+   "company": "Animal Pak",
+   "urlImg": "/images/good3.jpg",
+   "price": "799",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "10",
+   "title": "Аргінін",
+   "company": "Scietic Nutrition",
+   "urlImg": "/images/good8.jpg",
+   "price": "799",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "11",
+   "title": "Мультивітаміни",
+   "company": "Now Foods",
+   "urlImg": "/images/shopping.webp",
+   "price": "989",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "12",
+   "title": "Гейнер 2,5 кг",
+   "company": "My Protein",
+   "urlImg": "/images/wed.webp",
+   "price": "650",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "13",
+   "title": "Протеїн 1 кг",
+   "company": "Optimum Nutrition",
+   "urlImg": "/images/good1.jpg",
+   "price": "1998",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "14",
+   "title": "Омега 3-6-9",
+   "company": "Ostrovit",
+   "urlImg": "/images/good2.jfif",
+   "price": "999",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "15",
+   "title": "Кретин 0.5 кг",
+   "company": "Animal Pak",
+   "urlImg": "/images/good3.jpg",
+   "price": "799",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "16",
+   "title": "Аргінін",
+   "company": "Scietic Nutrition",
+   "urlImg": "/images/good8.jpg",
+   "price": "799",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "17",
+   "title": "Мультивітаміни",
+   "company": "Now Foods",
+   "urlImg": "/images/shopping.webp",
+   "price": "989",
+   "count": "1",
+   "description": "Lorem"
+  },
+  {
+   "id": "18",
+   "title": "Гейнер 2,5 кг",
+   "company": "My Protein",
+   "urlImg": "/images/wed.webp",
+   "price": "650",
+   "count": "1",
+   "description": "Lorem"
+  }
+ ]

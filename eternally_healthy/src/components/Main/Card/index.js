@@ -40,7 +40,7 @@ function Card({urlImg,title, company, price,id ,count, onPlus, onHeart, changeIn
                 <div className={styles.head}>
                     <img onClick={pressAddFav} className={styles.favor} 
                     src={isPress ? "/images/blacklike.png" : "/images/opacitylike.png"}/>
-                    <input onChange={changeInputCount} type="number" min={1} max={1000}  />
+                    <input  onChange={changeInputCount} type="number" min={1} max={1000}  />
                     <img onClick={() => pressAddDescr(id)} width={15} height={15} src="/images/descr.png" alt="" srcset="" />
                 </div>
                 <img width={133} height={112} src={urlImg}/>

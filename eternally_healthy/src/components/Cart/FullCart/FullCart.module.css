@@ -120,12 +120,12 @@
 .draw_footer button {
     margin-top: 15px;
     color: white;
-    width:  320px;
+    width:  260px;
     height: 55px;
     left: 895px;
     top: 974px;
     background: #719a40;
-    border-radius: 18px;
+    border-radius: 7px;
 }
 @media (max-width: 385px) {
     .draw_footer button{

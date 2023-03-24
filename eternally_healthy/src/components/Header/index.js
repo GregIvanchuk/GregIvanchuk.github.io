@@ -1,6 +1,11 @@
 import styles from "./Header.module.css";
+import React from "react";
 import {Link} from "react-router-dom";
 function Header(props) {
+    let  [open,setOpen] = React.useState("true")
+    let openHandler = () => {
+        setOpen(!open);
+      }
     return (
     <header className={styles.header}>
         <div className={styles.leftHeader}>
@@ -10,24 +15,34 @@ function Header(props) {
                 <p>Найкращий вибір вітамінів та спортивних добавок</p>
             </div>
         </div>
+        <div className={open ? styles.menu : styles.menu + " " + styles.active }>
         <ul className={styles.rigthHeader}>
-            <li className={styles.cartIcon}>
-                <div className={styles.cart} onClick={props.openCart}>
-                    <img className={styles.firstIcon} height={32} width={32} src="/images/cart.png" alt="" />
-                    <span>{props.sum}</span>
-                </div>
+        <li>
+            <Link to="/">
+                    ГОЛОВНА
+                </Link>
             </li>
             <li>
                 <Link to="/favorites">
-                    <img  className={styles.firstIcon} width={32} height={32} src="/images/like.png" />
+                    ЗАКЛАДКИ
                 </Link>
             </li>
             <li>
             <Link to="/buys">
-                    <img className={styles.lastIcon}  width={40} height={40} src="/images/user.png" />
+                    ПРИДБАНЕ
                 </Link>
             </li>
+            <li className={styles.cartIcon}>
+                <div className={styles.cart} onClick={props.openCart}>
+                <span>КОРЗИНА</span>
+                    {/* <span>{props.sum} грн.</span> */}
+                </div>
+            </li>
         </ul>
+        </div>
+        <div onClick={() => openHandler()}  className={ open ? styles.burger :  styles.burger + " " + styles.active}>
+        <span></span>
+      </div>
     </header>
     );
 }

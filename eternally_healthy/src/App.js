@@ -14,6 +14,7 @@ import Description from "./components/Main/Description";
 
 export const AppContext = React.createContext({});
 function App() {
+    console.log(process.env)
     let [isOpenCart, setIsOpenCart] = useState(false);
     let [isOpenDescr, setIsOpenDescr] = useState(false);
     let [itemsCart, setItemsCart] = useState([]);

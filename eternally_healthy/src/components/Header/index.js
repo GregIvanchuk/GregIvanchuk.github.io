@@ -16,7 +16,7 @@ function Header(props) {
             </div>
         </div>
         <div className={open ? styles.menu : styles.menu + " " + styles.active }>
-        <ul className={styles.rigthHeader}>
+        <ul onClick={() => openHandler()} className={styles.rigthHeader}>
         <li>
             <Link to="/">
                     ГОЛОВНА
